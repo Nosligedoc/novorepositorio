@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MEUS TESTES JavaScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+    <!-- 
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'> 
+
+    -->
+</head>
+<body>
+    
+    <script>
+        // Tipos de variaveis no JavaScript
+        // VAR = VARIAVEL GLOBAL
+        /*
+        
+        var nome0 = 'Gilson';
+        var nome1 = "Gilmar";
+        var nome2 = 27;
+        var boleana = true;
+        console.log(nome0)
+
+        // LET = Variavel no escopo (Local entre { local })
+        
+        {
+            let idade = 30;
+            console.log('Idade')
+            console.log(idade + ' Anos');
+        }
+        
+        // CONST = Sempre tera o mesmo valor uma Constante 
+        
+        const sempre = true;
+        console.log('Sexo maculino ?')
+        console.log(sempre);
+        
+        //--------------------------------------------------------------------------------------//
+        
+        // Arrays = uma Variavel com varios indices , cada um contendo seu unico dado.
+        // lista.Push('Cesar') Vai adicionar o Cesar na ultima posição da Array
+        // lista[6] = 'CACHORRO'; Ira alterar o elemento do indice 6 pra CACHORRO
+
+
+        var lista = [sempre,'Gilson','Gilmar','Andressa','Noah','Evelyn']
+        
+        
+        console.log(lista);
+
+        lista[1] = 'Gilson Brito';
+        lista[6] = 'CACHORRO'
+        lista.push('Cesar');
+        lista[8]= 'Vanessa'
+        lista[9]= 'Carol'
+
+        console.log(lista)
+
+        /*
+         OPERADORES MATEMATICOS JS
+
+        ADIÇÃO        + (N + N1)
+        SUBTRAÇÃO     - (N - N1)
+        MULTIPLICAÇÃO * (N * N1)
+        DIVIÇÃO       / (N / N1)
+
+        EXPONENCIAÇÃO  x Elevado a Y Utiliza-se o Metodo pow()
+        Sintaxe
+
+        math.pow(x,y)
+
+        */
+
+        /*
+        OPERADORES LOGICOS JS
+
+        AND  Utilizamos && (Significa E )
+
+        Tabela verdade: AND &&
+        if (condicao1 E condicao2 E condicao3 E ...)
+        Condição 1            Condição 2            Resultado
+        Verdade                 Verdade              Verdade
+        Verdade                 Falso                 Falso
+        Falso                   Verdade               Falso
+        Falso                   Falso                 Falso
+
+        oO resultado final só sera Verdadeiro se Todos && Forem Verdadeiros.
+        */
+//-----------------------------------------------------------------------------
+        /*
+        OR   Utilizamos || (significa OU)
+        if (condição1 || condição2 )
+        Tabela verdade: OR ||
+        Condição 1            Condição 2         Resultado
+        Verdade                 Verdade             Verdade
+        Verdade                 Falso               Verdade
+        Falso                   Verdade             Verdade
+        Falso                   Falso               Falso
+
+        Se uma das condições for verdade o Resultado Final Sera True.
+        Se as Duas Condições For Falso o Resultado final sera False.
+        */
+//-----------------------------------------------------------------------------
+        /*
+        NOT  Utilizamos ! (Significa Não ou Negação)
+
+        Ele Inverte o Valor Final
+        Exemplo:
+        
+
+        var verde = true;
+        console.log('Inverti o valor da variavel verde Usando ! : ' + verde + ' em ' +!verde);
+        console.log('Confirmei o valor da Variavel Verde Usando !! : '+ verde  +" "+ !!verde);
+
+        */
+//------------------------------------------------------------------------------      
+        /* 
+        CONDIÇÕES IF (se) , ELSE IF (se não se ) e ELSE (se não)
+        
+        if(lista[1] == 'Gilson Brito'){
+
+            console.log('Condição IF Esta Correta')
+            
+        }else{
+            console.log("Condição IF esta errada")
+            console.log('Indice correto é : ' + lista[1])
+        }
+
+        */
+
+        // FUNCÕES JS
+
+        /*
+
+        function teste(nome,nomee){
+            if(nome == null || nomee == null)
+                return console.log("Por favor Digite os dois Nomes") 
+            else if(nome != 'Gilsinho' && nomee != 'Gilsão')
+                return console.log('Somente um nome esta correto')     
+            else(nome == 'Gilsinho' && nomee == 'Gilsão')
+                console.log('Os dois nomes estão corretos')
+
+        }
+
+        // CHAMANDO FUNÇÃO
+        teste('Gilsinho','Gilsão');
+        */
+        
+        // LAÇO DE REPETIÇÃO WHILE (ENQUANTO)
+        /*
+        ++ Incrementa +1 
+        -- Diminui -1
+        var n = 20;
+
+        while(n >= 0){
+            console.log(n);
+            n--;
+        }
+        */
+       // LAÇO DE REPETIÇÃO FOR (ENQUANTO)
+        /*
+       for(var i = 0; i <= 10; i++ ){
+            console.log(i)
+       }
+        */
+       
+       // LAÇO DE REPETIÇÃO DO WHILE (ENQUANTO)
+
+       /*
+       var n = 0;
+       do {
+            console.log(n);
+            n++;
+       } while (n <= 10);
+       */
+       // LAÇO DE REPETIÇÃO FOR EACH (ENQUANTO)
+
+       /*
+
+    var lista = ['Gilson','Gilmar','Gilvan']
+
+    for (let i = 0; i < lista.length; i++) {  // FOR pra percorrer uma Lista de forma manual
+        var element = lista[i]; // O element que vai guardar o nome que o i vai passar na lista
+        console.log(i); // Imprimir o Indice 
+        console.log(element); // Imprimir o dado do indice
+    }
+       */
+      //FOMAR DE USAR FOR MAIS ATUALIZADA  
+
+        /*
+       var lista = ['Gilson','Gilmar','Gilvan']
+        lista.forEach(function(valor,indice) {
+            console.log(valor,indice , " valores da Lista com seus respectivos indices !")
+        });
+
+        */
+        </script>
+
+</body>
+</html>
